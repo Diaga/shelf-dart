@@ -3,7 +3,7 @@
   "engine": "v2",
   "file": "index.js",
   "sourceRoot": "",
-  "sources": ["org-dartlang-sdk:///lib/_internal/js_runtime/lib/rti.dart","index.dart"],
+  "sources": ["org-dartlang-sdk:///lib/_internal/js_runtime/lib/rti.dart","../../lib/app/templates/index/index.dart"],
   "names": ["_Universe.addRules","_Universe.addErasedTypes","_Utils.objectAssign","main","objectAssign","addRules","addErasedTypes","throwCyclicInit","throwLateInitializationError","closureFromTearOff","int","double","num","String","bool","Null","List","findType"],
   "mappings": "A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAmlDaA;wBADCA;MACRA,gDAA+CA;K;8BAEvCC;MACRA,OAAOA,yCAA0CA;K;yBA67CzCC;MAGeA;;;MACzBA;kBAE2BA;;;IAE7BA,C;;;UC3hGGC;IAAQA,C",
   "x_org_dartlang_dart2js": {

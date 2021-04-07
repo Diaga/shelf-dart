@@ -5,7 +5,7 @@
     "lib"
   ],
   "ext": "dart",
-  "exec": "dart2js -o lib/app/templates/index/index.js lib/app/templates/index/index.dart && dart run",
+  "exec": "dart2js -o static/js/index.js lib/app/templates/index/index.dart && dart run",
   "execMap": {
     "dart": "dart"
   }
