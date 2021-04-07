@@ -15,7 +15,7 @@
     ```
 3. Setup environment
     ```shell script
-    $ pub get
+    $ dart pub get
     $ npm i -g nodemon
     ```
 4. Run server through nodemon to watch for changes in source files and restart server automatically
