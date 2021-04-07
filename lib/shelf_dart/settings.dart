@@ -14,7 +14,4 @@ var middlewares = <shelf.Middleware>[
 ];
 
 // Add urls from all apps
-var urls = [
-  ...app.urls,
-  ...api.urls
-];
+var urls = [...app.urls, ...api.urls];
