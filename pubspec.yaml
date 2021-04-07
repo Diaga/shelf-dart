@@ -1,14 +1,16 @@
 name: shelf_dart
 description: A web server built using the shelf package.
 # version: 1.0.0
-# homepage: https://www.example.com
 
 environment:
-  sdk: '>=2.10.0 <3.0.0'
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   shelf: ^1.1.0
   shelf_router: ^1.0.0
+  json_annotation: ^4.0.1
+  json_serializable: ^4.1.0
 
 dev_dependencies:
   pedantic: ^1.9.0
+  build_runner: ^1.12.2
