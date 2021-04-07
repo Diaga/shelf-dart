@@ -1,0 +1,12 @@
+{
+  "verbose": false,
+  "watch": [
+    "bin",
+    "lib"
+  ],
+  "ext": "dart",
+  "exec": "dart bin/shelf_dart.dart && dart2js -o public/assets/script.js lib/standalone/index.dart",
+  "execMap": {
+    "dart": "dart"
+  }
+}
