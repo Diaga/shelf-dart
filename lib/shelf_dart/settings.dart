@@ -5,7 +5,8 @@ import 'package:shelf_dart/app/urls.dart' as app;
 import 'package:shelf_dart/api/urls.dart' as api;
 
 // Directory to look for data
-const dataPath = 'static/data/';
+const staticPath = 'static';
+const dataPath = '$staticPath/data/';
 
 // Add middlewares to be registered in order
 var middlewares = <shelf.Middleware>[
@@ -14,4 +15,7 @@ var middlewares = <shelf.Middleware>[
 ];
 
 // Add urls from all apps
-var urls = [...app.urls, ...api.urls];
+var urls = [
+  ...app.urls,
+  ...api.urls,
+];

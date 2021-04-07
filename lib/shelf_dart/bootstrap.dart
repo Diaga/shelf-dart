@@ -11,7 +11,7 @@ class App {
   App() {
     var pipeline = shelf.Pipeline();
     for (var middleware in settings.middlewares) {
-      pipeline.addMiddleware(middleware);
+      pipeline = pipeline.addMiddleware(middleware);
     }
 
     _handler = pipeline.addHandler(registerRoutes());

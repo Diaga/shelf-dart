@@ -4,7 +4,7 @@
 - [ ] Render HTML templates.
 - [ ] Convert Dart to JS for use client-side.
 - [ ] Handle REST requests.
-- [ ] Serve files from disk.
+- [x] Serve files from disk.
 
 ## Setting up server
 
