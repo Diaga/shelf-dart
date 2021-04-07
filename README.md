@@ -1,10 +1,31 @@
 ## Requirements
 
-- [ ] Make a webserver using [Shelf](https://pub.dev/packages/shelf).
+- [x] Make a webserver using [Shelf](https://pub.dev/packages/shelf).
 - [ ] Render HTML templates.
 - [ ] Convert Dart to JS for use client-side.
 - [ ] Handle REST requests.
 - [ ] Serve files from disk.
+
+## Setting up server
+
+1. Download and install [latest version of git](https://git-scm.com/downloads).
+2. Clone the repository locally
+     ```shell script
+    $ git clone https://github.com/Diaga/shelf-dart.git
+    ```
+3. Setup environment
+    ```shell script
+    $ pub get
+    $ npm i -g nodemon
+    ```
+4. Run server through nodemon to watch for changes in source files and restart server automatically
+    ```shell script
+    $ nodemon
+    ```
+   If watching for changes is not required, use the following command to run server
+   ```shell script
+    $ dart run
+    ```
 
 ## License 
 - [MIT](https://github.com/Diaga/shelf-dart/blob/master/LICENSE).
