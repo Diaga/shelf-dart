@@ -7,7 +7,7 @@ import 'package:shelf_dart/shelf_dart/settings.dart' as settings;
 abstract class Manager {
   List getAll();
 
-  Object? get(String id);
+  Object get(String id);
 }
 
 class RecipeManager extends Manager {
@@ -26,9 +26,18 @@ class RecipeManager extends Manager {
   }
 
   @override
-  Object? get(String id) {
+  Object get(String id) {
     return _recipes.firstWhere(
       (recipe) => recipe.id.toString() == id,
+      orElse: () => 'Not found',
+    );
+  }
+
+  Object findByName(String name) {
+    return _recipes.firstWhere(
+      (recipe) => recipe.name.toLowerCase().contains(
+            name.toLowerCase(),
+          ),
       orElse: () => 'Not found',
     );
   }

@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:shelf_dart/api/managers.dart';
 import 'package:json_annotation/json_annotation.dart';
 
@@ -25,5 +27,5 @@ class Recipe {
   Map<String, dynamic> toJson() => _$RecipeToJson(this);
 
   @override
-  String toString() => toJson().toString();
+  String toString() => jsonEncode(toJson());
 }
