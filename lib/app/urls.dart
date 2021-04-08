@@ -6,7 +6,7 @@ var urls = [
   {
     'method': 'GET',
     'path': '/',
-    'handler': views.echoRequest,
+    'handler': views.serveIndexHTML,
   },
   {
     'method': 'GET',

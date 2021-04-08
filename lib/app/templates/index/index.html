@@ -7,7 +7,49 @@
     <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-
+<section class="search-section">
+    <h1>Find a recipe</h1>
+    <div class="search">
+        <input class="search-bar" placeholder="Feeling hungry are we?">
+        <button class="search-button">
+            <img src="/static/assets/search.svg" alt="Search Icon">
+        </button>
+    </div>
+</section>
+<section class="recipe-section">
+    <div class="recipe-not-found">
+        <h2>Recipe not found!</h2>
+        <h3>Try searching for "Crock Pot Roast".</h3>
+    </div>
+    <div class="recipe-card" style="display: none">
+        <h3 class="primary">American Cuisine</h3>
+        <h2 id="card-title">Crock Pot Roast</h2>
+        <div class="divider"></div>
+        <div class="recipe-content-holder">
+            <img id="recipe-img"
+                 src="http://img.sndimg.com/food/image/upload/w_266/v1/img/recipes/27/20/8/picVfzLZo.jpg"
+                 alt="Recipe image">
+            <div class="recipe-content">
+                <div>
+                    <h3>Directions</h3>
+                    <div id="recipe-directions">
+                        <ul>
+                            <li>Place beef roast in crock pot.</li>
+                            <li>Mix the dried mixes together in a bowl and sprinkle over the roast.</li>
+                            <li>Pour the water around the roast.</li>
+                            <li>Cook on low for 7-9 hours.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recipe-footer">
+                    <button id="recipe-button">
+                        <span>View Recipe<img src="/static/assets/arrow-right.svg"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="/static/js/index.js"></script>
 </body>
 </html>
