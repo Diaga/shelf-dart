@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
 
 h1 {
-    font-size: 6rem;
+    font-size: 5rem;
+    margin-bottom: 48px;
 }
 
 h2 {
@@ -10,6 +12,10 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+}
+
+.font-sans {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .bg-primary {
@@ -66,13 +72,14 @@ body {
 
 #search-bar {
     width: 90%;
+    height: 48px;
 
     padding: 20px;
     border-radius: 24px;
     border: none;
     outline: none;
 
-    font-size: 24px;
+    font-size: 16px;
 
     background-color: white;
     box-shadow: inset 4px 4px 12px lightgrey, inset -8px -8px 16px white;
@@ -81,13 +88,13 @@ body {
 }
 
 #search-button {
-    padding: 0 23px;
-    height: 65px;
+    width: 48px;
+    height: 48px;
 
     outline: none;
     border: none;
 
-    border-radius: 50%;
+    border-radius: 24px;
     background-color: #21C17A;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.18), -8px -8px 16px rgba(229, 229, 229, 0.32);
 }
@@ -115,13 +122,14 @@ body {
 }
 
 #recipe-not-found {
-    margin-bottom: 250px;
+    margin-bottom: 256px;
 }
 
 #recipe-card {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 
-    padding: 20px;
+    padding: 24px;
+    width: 50%;
 
     border-radius: 24px;
     background: #f0f0f0;
@@ -129,7 +137,9 @@ body {
 }
 
 .divider {
-    height: 10px;
+    height: 6px;
+
+    border-radius: 3px;
 
     background-color: black;
 }
@@ -144,6 +154,8 @@ body {
     display: flex;
     flex-direction: column;
 
+    width: 100%;
+
     justify-content: space-between;
 
     margin-left: 20px;
@@ -151,6 +163,10 @@ body {
 
 #recipe-directions {
     margin-left: 20px;
+}
+
+#recipe-directions li {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .recipe-footer {
@@ -188,4 +204,10 @@ body {
 #recipe-img {
     width: 250px;
     height: 250px;
+
+    border: none;
+
+    border-radius: 24px;
+    background: linear-gradient(135deg, #ffffff, #d8d8d8);
+    box-shadow:  8px 8px 16px rgba(0, 0, 0, 0.12), -8px -8px 16px rgba(252, 252, 252, 0.32);
 }
