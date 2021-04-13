@@ -3,12 +3,12 @@ import 'package:shelf_dart/api/views.dart' as views;
 const urls = [
   {
     'method': 'GET',
-    'path': '/recipe',
+    'path': '/api/recipe',
     'handler': views.viewRecipes,
   },
   {
     'method': 'GET',
-    'path': '/recipe/<id:String>',
+    'path': '/api/recipe/<id:String>',
     'handler': views.viewRecipe,
   },
 ];
