@@ -4,7 +4,7 @@ import 'package:shelf_dart/api/managers.dart';
 import 'package:shelf_dart/api/models.dart';
 import 'package:shelf/shelf.dart' as shelf;
 
-const _headers = {'Content-Type': 'application/json'};
+const _headers = {'Content-Type': 'application/json; charset=utf-8'};
 
 FutureOr<shelf.Response> viewRecipes(shelf.Request request) {
   final params = request.url.queryParameters;
