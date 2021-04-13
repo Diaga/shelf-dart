@@ -31,3 +31,7 @@ jobs:
       - name: Analyze code
         run: dart analyze --fatal-infos
         if: always() && steps.install.outcome == 'success'
+
+      - name: Run tests
+        run: dart pub run test
+        if: always() && steps.install.outcome == 'success'
