@@ -9,10 +9,15 @@ const _headers = {'Content-Type': 'application/json'};
 FutureOr<shelf.Response> viewRecipes(shelf.Request request) {
   final params = request.url.queryParameters;
   if (params.containsKey('name')) {
-    return shelf.Response.ok(
-      (Recipe.objects as RecipeManager).findByName(params['name']!).toString(),
-      headers: _headers,
-    );
+    final body = (Recipe.objects as RecipeManager)
+        .findByName(params['name']!)
+        .toString();
+    return body == 'Not found'
+        ? shelf.Response.notFound(body)
+        : shelf.Response.ok(
+            body,
+            headers: _headers,
+          );
   }
   return shelf.Response.ok(
     Recipe.objects.getAll().toString(),
@@ -21,8 +26,11 @@ FutureOr<shelf.Response> viewRecipes(shelf.Request request) {
 }
 
 FutureOr<shelf.Response> viewRecipe(shelf.Request request, String id) {
-  return shelf.Response.ok(
-    Recipe.objects.get(id).toString(),
-    headers: _headers,
-  );
+  final body = Recipe.objects.get(id).toString();
+  return body == 'Not found'
+      ? shelf.Response.notFound(body)
+      : shelf.Response.ok(
+          body,
+          headers: _headers,
+        );
 }
