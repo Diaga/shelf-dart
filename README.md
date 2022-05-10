@@ -1,4 +1,4 @@
-## shelf-dart
+## shelf-dart (GitHub App)
 
 ![homepage](static/assets/homepage.png)
 
