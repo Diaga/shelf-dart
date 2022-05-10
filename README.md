@@ -1,4 +1,5 @@
 ## shelf-dart (GitHub App)
+[![CI](https://github.com/Diaga/shelf-dart/actions/workflows/test.yml/badge.svg)](https://github.com/Diaga/shelf-dart/actions/workflows/test.yml)
 
 ![homepage](static/assets/homepage.png)
 
